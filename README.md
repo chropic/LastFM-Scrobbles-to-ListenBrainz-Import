@@ -15,6 +15,7 @@ It is designed to match ListenBrainz’ import format by writing one JSON object
 ## Requirements
 
 - Python 3.8+ (no third-party dependencies)
+- A Last.fm scrobble export in .JSON format [from this website.](https://lastfm.ghan.nl/export/)
 
 ## Setup
 
