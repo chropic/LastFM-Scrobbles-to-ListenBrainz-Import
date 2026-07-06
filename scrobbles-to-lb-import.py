@@ -68,6 +68,8 @@ def flatten_tracks(payload: Any) -> List[Dict[str, Any]]:
         for x in payload:
             if isinstance(x, list):
                 items.extend(x)
+            elif "track" in x:
+                items.extend(_ensure_list(x["track"]))
             else:
                 items.append(x)
     elif isinstance(payload, dict):
